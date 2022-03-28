@@ -52,7 +52,7 @@ head(brewer.pal.info, 10)  # show 10 palettes
 
 #Instead of completely deleting the values outside of the range, we can zoom-in instead 
 
-  g + coord_cartesian(c(min = , max = )) + ylim(c(min = , max = ))
+  g + coord_cartesian(xlim=c(xmin,xmax), ylim=c(ymin, ymax))
 
 
 ###### 3 Adding titles, labels and subtitles -----------------------
@@ -318,7 +318,7 @@ g_pic <- rasterGrob(img, interpolate=TRUE)
  ggMarginal(g, type = "density", fill="transparent")
  
  
- #### 15 Time series plots --------------------
+ #### 15 Time series plots ----------------
  
  ## 15 A  for one category 
  

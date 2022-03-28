@@ -318,9 +318,9 @@ g_pic <- rasterGrob(img, interpolate=TRUE)
  ggMarginal(g, type = "density", fill="transparent")
  
  
- #### 15 Time series plots 
+ #### 15 Time series plots --------------------
  
- ## 15 A  for one catrgory 
+ ## 15 A  for one category 
  
  g <- ggplot(data, aes(x=x)) + 
    geom_line(aes(y= y))
